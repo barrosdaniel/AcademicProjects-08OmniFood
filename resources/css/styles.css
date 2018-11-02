@@ -1,3 +1,6 @@
+/* ----------------------------------------*/
+/* Resets */
+/* ----------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +16,131 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-.row {
+
+/* ----------------------------------------*/
+/* Global */
+/* ----------------------------------------*/
+.container {
   max-width: 1140px;
   margin: auto;
-  /* TEMP */
-  border: 1px solid gray;
 }
+
+
+/* ----------------------------------------*/
+/* Header */
+/* ----------------------------------------*/
+header .top-bar img#logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin: 20px 0 0 20px;
+}
+
+header .top-bar nav.main-nav {
+  float: right;
+  margin-right: 20px;
+}
+
+header .top-bar nav.main-nav ul {
+  margin-top: 55px;
+  list-style: none;
+}
+
+header .top-bar nav.main-nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+header .top-bar nav.main-nav li a:link,
+header .top-bar nav.main-nav li a:visited {
+  padding-bottom: 15px;
+  border-bottom: 2px solid transparent;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: 0.5s;
+}
+
+header .top-bar nav.main-nav li a:hover,
+header .top-bar nav.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+header {
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+  url(/resources/css/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+header .hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header h1 {
+  margin: 0 0 20px 0;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+header .button:link,
+header .button:visited
+ {
+  display: inline-block;
+  border: 1px solid #e67e22;
+  border-radius: 25px;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+header .button-full:link, 
+header .button-full:visited {
+  margin-right: 15px;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+header .button-ghost:link,
+header .button-ghost:visited {
+  color: #e67e22;
+}
+
+header .button:hover,
+header .button:active {
+  border: 1px solid #cf6d17;
+  background-color: #cf6d17;
+}
+
+header .button-full:hover, 
+header .button-full:active {
+  background-color: #cf6d17;
+}
+
+header .button-ghost:hover,
+header .button-ghost:active {
+  background-color: #cf6d17;
+  color: #fff;
+}
+
+
+
+
+
+/* ----------------------------------------*/
+/* NOTES */
+/* ----------------------------------------*/
+/* Main orange: #e67e22 */
