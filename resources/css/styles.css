@@ -3,6 +3,7 @@
 /* ----------------------------------------*/
 :root {
   --background-color: #fafafa;
+  --background-color-dark: #f3f3f3;
   --primary-text-color: #555;
   --light-text-color: #fff;
   --highlight-color: #e67e22;
@@ -35,6 +36,7 @@ html {
 .container {
   max-width: 1140px;
   margin: auto;
+  overflow: hidden;
 }
 
 .box {
@@ -43,6 +45,19 @@ html {
 
 section {
   padding: 4rem 0;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /* Headings */
@@ -223,7 +238,7 @@ header .hero-text-box {
 /* ----------------------------------------*/
 section.section-meals {
   clear: both;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .meals-showcase {
@@ -255,4 +270,55 @@ section.section-meals {
 .meal-photo img:hover {
   transform: scale(1.05);
   opacity: 1;
+}
+
+
+
+/* ----------------------------------------*/
+/* Wow It Works Section */
+/* ----------------------------------------*/
+section.section-steps {
+  background-color: var(--background-color-dark);
+}
+
+.steps-box-image {
+  margin: 1.5rem 0 0 0;
+  padding-right: 3%;
+  text-align: right;
+}
+
+.app-screen {
+  width: 50%;
+}
+
+.steps-box-steps {
+  margin: 4rem 0 0 0;
+  padding-left: 3%;
+}
+
+.works-step {
+  margin-bottom: 2.5rem;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 4rem;
+}
+
+.works-step div {
+  float: left;
+  border: 1px solid var(--highlight-color);
+  border-radius: 50%;
+  padding: 0.25rem;
+  color: var(--highlight-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-right: 1.25rem;
+}
+
+.button-app img {
+  margin-right: 0.5rem;
+  height: 2rem;
+  width: auto;
 }
