@@ -389,7 +389,7 @@ blockquote {
 }
 
 blockquote:before {
-  content:"\201C";
+  content: "\201C";
   display: block;
   font-size: 5rem;
   position: absolute;
