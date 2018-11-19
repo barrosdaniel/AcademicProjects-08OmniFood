@@ -9,6 +9,7 @@
   --light-text-color: #fff;
   --highlight-color: #e67e22;
   --highlight-dark-color: #cf6d17;
+  --highlight-color-gray: #ccc;
   --image-overlay-color: rgba(0, 0, 0, 0.7);
   --box-shadow: 0.125rem 0.125rem 0.25rem rgba(85, 85, 85, 0.1);
 }
@@ -117,7 +118,8 @@ h3 {
 
 /* Buttons */
 .button:link,
-.button:visited {
+.button:visited,
+input[type=submit] {
   display: inline-block;
   border: 1px solid var(--highlight-color);
   border-radius: 25px;
@@ -128,7 +130,8 @@ h3 {
 }
 
 .button-full:link,
-.button-full:visited {
+.button-full:visited,
+input[type=submit] {
   margin-right: 15px;
   background-color: var(--highlight-color);
   color: var(--light-text-color);
@@ -140,14 +143,19 @@ h3 {
 }
 
 .button:hover,
-.button:active {
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   border: 1px solid var(--highlight-dark-color);
   background-color: var(--highlight-dark-color);
 }
 
 .button-full:hover,
-.button-full:active {
+.button-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: var(--highlight-dark-color);
+  cursor: pointer;
 }
 
 .button-ghost:hover,
@@ -468,4 +476,36 @@ blockquote cite img {
   padding-top: 0;
   text-align: center;
   border: 0;
+}
+
+
+
+/* ----------------------------------------*/
+/* Fomr Section */
+/* ----------------------------------------*/
+*:focus {
+  outline: none
+}
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 0.35rem;
+  border-radius: 5px;
+  border: 1px solid var(--highlight-color-gray);
+}
+
+textarea {
+  height: 6rem;
+}
+
+input[type=checkbox] {
+  margin: 0.5rem 0.25rem 0.5rem 0;
 }
