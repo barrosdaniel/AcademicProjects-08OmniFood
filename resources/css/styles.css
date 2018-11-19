@@ -356,19 +356,6 @@ div.city-feature p {
   font-size: 0.9rem;
 }
 
-/* div.city-feature i {
-  display: inline-block;
-  width: 1.5rem;
-  font-size: 1.2rem;
-  color: var(--highlight-color);
-  text-align: center;
-  margin-right: 0.5rem;
-
-  line-height: 1.2rem;
-  vertical-align: middle;
-  margin-top: -0.25rem;
-} */
-
 div.city-feature p a:link,
 div.city-feature p a:visited {
   color: var(--highlight-color);
