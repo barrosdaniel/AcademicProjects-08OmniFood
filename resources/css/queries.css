@@ -117,7 +117,8 @@
   }
 
   .meal-photo img:hover {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   .steps-box-image {
@@ -161,9 +162,5 @@
   .contact-form {
     width: 100%;
   }
-
-
-
-
 
 }
