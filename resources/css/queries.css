@@ -1,7 +1,7 @@
 /* Large tablets to small laptops 1024-1199px width 
 ----------------------------------------------------------------------*/
 @media only screen and (max-width: 1199px) {
-  
+
   header .hero-text-box {
     width: 100%;
     padding: 0 2%;
@@ -10,7 +10,7 @@
   .container {
     padding: 0 2%;
   }
- 
+
 }
 
 
@@ -32,10 +32,10 @@
     margin: 0 10%;
   }
 
-    .steps-box {
+  .steps-box {
     margin-top: 1rem;
   }
- 
+
   .steps-box-image {
     margin: 0;
   }
@@ -81,7 +81,74 @@
 ----------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
 
-  
+  html {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 1.5rem 0;
+  }
+
+  .container,
+  header .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .meal-photo img:hover {
+    transform: scale(1.1);
+  }
+
+  .steps-box-image {
+    margin: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .works-step {
+    margin-bottom: 1rem;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 1rem;
+  }
+
+  .works-step div {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.75rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+  }
+
+  .app-screen {
+    width: 40%;
+  }
+
+
+
+
 
 }
 
@@ -89,8 +156,4 @@
 
 /* Small mobile phones 0-479px width 
 ----------------------------------------------------------------------*/
-@media only screen and (max-width: 479px) {
-
-  
-
-}
+@media only screen and (max-width: 479px) {}
