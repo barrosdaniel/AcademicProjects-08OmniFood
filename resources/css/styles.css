@@ -651,11 +651,13 @@ footer p {
 /* Animations */
 /* ----------------------------------------*/
 .js--waypoint-features-animation,
-.js--waypoint-works-animation {
+.js--waypoint-works-animation,
+.js--waypoint-cities-animation {
   opacity: 0;
 }
 
 .js--waypoint-features-animation .animated,
-.js--waypoint-works-animation .animated {
+.js--waypoint-works-animation .animated,
+.js--waypoint-cities-animation .animated {
   opacity: 1;
 }

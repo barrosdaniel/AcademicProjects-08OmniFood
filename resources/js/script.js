@@ -91,6 +91,13 @@ $(document).ready(function () {
     offset: '50%'
   });
 
+  // Cities Animation
+  $('.js--waypoint-cities-animation').waypoint(function (direction) {
+    $('.js--waypoint-cities-animation').addClass('animated fadeIn');
+  }, {
+    offset: '50%'
+  });
+
 
 
 
