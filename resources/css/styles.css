@@ -644,3 +644,16 @@ footer p {
   color: var(--primary-text-color-gray);
   font-size: 0.7rem;
 }
+
+
+
+/* ----------------------------------------*/
+/* Animations */
+/* ----------------------------------------*/
+.js--waypoint-features-animation {
+  opacity: 0;
+}
+
+.js--waypoint-features-animation .animated {
+  opacity: 1;
+}
