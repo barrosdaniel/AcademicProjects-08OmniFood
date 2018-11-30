@@ -650,10 +650,12 @@ footer p {
 /* ----------------------------------------*/
 /* Animations */
 /* ----------------------------------------*/
-.js--waypoint-features-animation {
+.js--waypoint-features-animation,
+.js--waypoint-works-animation {
   opacity: 0;
 }
 
-.js--waypoint-features-animation .animated {
+.js--waypoint-features-animation .animated,
+.js--waypoint-works-animation .animated {
   opacity: 1;
 }

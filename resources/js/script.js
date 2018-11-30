@@ -84,6 +84,13 @@ $(document).ready(function () {
     offset: '50%'
   });
 
+  // Works Animation
+  $('.js--waypoint-works-animation').waypoint(function (direction) {
+    $('.js--waypoint-works-animation').addClass('animated fadeInLeft');
+  }, {
+    offset: '50%'
+  });
+
 
 
 
