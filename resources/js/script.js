@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 
 
-  // Scroll on Buttons (jQuery only)
+  // Scroll on Buttons (jQuery only using classes)
   // ======================================================================
   // "I'm hungry"
   $('.js--scroll-to-plans').click(function () {
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
 
-  // Navigation Scroll
+  // Navigation Scroll (jQuery only using ids)
   // ======================================================================
   // Select all links with hashes
   $('a[href*="#"]')
@@ -98,6 +98,12 @@ $(document).ready(function () {
     offset: '50%'
   });
 
+  // Plans Animation
+  $('.js--waypoint-plans-animation').waypoint(function (direction) {
+    $('.js--waypoint-plans-animation').addClass('animated pulse');
+  }, {
+    offset: '50%'
+  });
 
 
 

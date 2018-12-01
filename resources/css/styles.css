@@ -271,6 +271,7 @@ header {
   left: 0;
   width: 100%;
   background-color: var(--background-color-opacity);
+  -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
   z-index: 9999;
 }
@@ -654,6 +655,13 @@ footer p {
 .js--waypoint-works-animation,
 .js--waypoint-cities-animation {
   opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.js--waypoint-plans-animation {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .js--waypoint-features-animation .animated,
