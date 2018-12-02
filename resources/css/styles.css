@@ -215,7 +215,7 @@ input[type=submit]:active {
 }
 
 .main-nav ul {
-  margin-top: 55px;
+  margin-top: 2.75rem;
   list-style: none;
 }
 
@@ -296,6 +296,19 @@ header {
   width: auto;
   float: left;
   margin: 0.25rem 0;
+}
+
+/* Mobile nav */
+a.mobile-nav-icon {
+  float: right;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 2rem;
+  color: var(--background-color);
 }
 
 

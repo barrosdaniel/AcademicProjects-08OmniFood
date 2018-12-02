@@ -99,9 +99,50 @@
     margin: 0 0 4% 0;
   }
 
-  .main-nav {
+  nav.main-nav {
+    float: left;
     display: none;
   }
+
+  nav.main-nav ul {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  a.mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .sticky nav.main-nav ul {
+    margin-top: 0.5rem;
+  }
+
+  .sticky nav.main-nav li a:link,
+  .sticky nav.main-nav li a:visited {
+    padding: 0.5rem 0;
+  }
+
+  .sticky a.mobile-nav-icon {
+    margin-top: 0.5rem;
+  }
+
+  .sticky a.mobile-nav-icon i {
+    color: var(--primary-text-color);
+  }
+
+
 
   .long-copy {
     width: 100%;
@@ -118,7 +159,7 @@
 
   .meal-photo img:hover {
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .steps-box-image {
