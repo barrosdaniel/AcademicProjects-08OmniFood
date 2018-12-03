@@ -128,7 +128,12 @@ $(document).ready(function() {
   // Navigation Icon (jQuery only using ids)
   // ======================================================================
   $('.js--nav-icon').click(function() {
+    // Toggle navigation menu from view
     var nav = $('.js--main-nav');
     nav.slideToggle(200);
+    // Change icon from hamburger to 'x'
+    var icon = $('.js--nav-icon i');
+    icon.toggleClass('ion-navicon round');
+    icon.toggleClass('ion-close-round');
   });
 });
