@@ -15,6 +15,8 @@
   --highlight-color-gray: #ccc;
   --image-overlay-color: rgba(0, 0, 0, 0.7);
   --box-shadow: 0.125rem 0.125rem 0.25rem rgba(85, 85, 85, 0.1);
+  --success-color: #26bf44;
+  --error-color: #d12e2e;
 }
 
 /* ----------------------------------------*/
@@ -37,7 +39,6 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
-
 
 /* ----------------------------------------*/
 /* Global */
@@ -102,7 +103,7 @@ h2:after {
   width: 100px;
   margin: 1.5rem auto 0 auto;
   background-color: var(--highlight-color);
-  content: " ";
+  content: ' ';
 }
 
 h3 {
@@ -125,7 +126,7 @@ h3 {
 /* Buttons */
 .button:link,
 .button:visited,
-input[type=submit] {
+input[type='submit'] {
   display: inline-block;
   border: 1px solid var(--highlight-color);
   border-radius: 25px;
@@ -138,7 +139,7 @@ input[type=submit] {
 
 .button-full:link,
 .button-full:visited,
-input[type=submit] {
+input[type='submit'] {
   margin-right: 15px;
   background-color: var(--highlight-color);
   color: var(--light-text-color);
@@ -151,16 +152,16 @@ input[type=submit] {
 
 .button:hover,
 .button:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+input[type='submit']:hover,
+input[type='submit']:active {
   border: 1px solid var(--highlight-dark-color);
   background-color: var(--highlight-dark-color);
 }
 
 .button-full:hover,
 .button-full:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+input[type='submit']:hover,
+input[type='submit']:active {
   background-color: var(--highlight-dark-color);
   cursor: pointer;
 }
@@ -192,8 +193,6 @@ input[type=submit]:active {
   vertical-align: middle;
   margin-top: -0.25rem;
 }
-
-
 
 /* ----------------------------------------*/
 /* Header Section */
@@ -242,11 +241,18 @@ input[type=submit]:active {
 }
 
 header {
-  background-image:
-    -webkit-gradient(linear, left top, left bottom, from(var(--image-overlay-color)), to(var(--image-overlay-color))),
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--image-overlay-color)),
+      to(var(--image-overlay-color))
+    ),
     url(../img/hero.jpg);
-  background-image:
-    linear-gradient(var(--image-overlay-color), var(--image-overlay-color)),
+  background-image: linear-gradient(
+      var(--image-overlay-color),
+      var(--image-overlay-color)
+    ),
     url(../img/hero.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -311,15 +317,12 @@ a.mobile-nav-icon {
   color: var(--background-color);
 }
 
-
-
 /* ----------------------------------------*/
 /* Features Section */
 /* ----------------------------------------*/
 .section-features .long-copy {
   margin-bottom: 1.5rem;
 }
-
 
 /* ----------------------------------------*/
 /* Meals Section */
@@ -362,8 +365,6 @@ section.section-meals {
   transform: scale(1.05);
   opacity: 1;
 }
-
-
 
 /* ----------------------------------------*/
 /* Wow It Works Section */
@@ -414,8 +415,6 @@ section.section-steps {
   width: auto;
 }
 
-
-
 /* ----------------------------------------*/
 /* Cities Section */
 /* ----------------------------------------*/
@@ -446,14 +445,23 @@ div.city-feature p a:active {
   border-bottom: 1px solid transparent;
 }
 
-
-
 /* ----------------------------------------*/
 /* Testimonials Section */
 /* ----------------------------------------*/
 .section-testimonials {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--image-overlay-color)), to(var(--image-overlay-color))), url(/resources/css/img/back-customers.jpg);
-  background-image: linear-gradient(var(--image-overlay-color), var(--image-overlay-color)), url(/resources/css/img/back-customers.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--image-overlay-color)),
+      to(var(--image-overlay-color))
+    ),
+    url(/resources/css/img/back-customers.jpg);
+  background-image: linear-gradient(
+      var(--image-overlay-color),
+      var(--image-overlay-color)
+    ),
+    url(/resources/css/img/back-customers.jpg);
   background-size: cover;
   color: var(--light-text-color);
   background-attachment: fixed;
@@ -467,7 +475,7 @@ blockquote {
 }
 
 blockquote:before {
-  content: "\201C";
+  content: '\201C';
   display: block;
   font-size: 5rem;
   position: absolute;
@@ -487,8 +495,6 @@ blockquote cite img {
   margin-right: 0.5rem;
   vertical-align: middle;
 }
-
-
 
 /* ----------------------------------------*/
 /* Plans Section */
@@ -547,13 +553,11 @@ blockquote cite img {
   border: 0;
 }
 
-
-
 /* ----------------------------------------*/
 /* Form Section */
 /* ----------------------------------------*/
 *:focus {
-  outline: none
+  outline: none;
 }
 
 .contact-form {
@@ -561,8 +565,8 @@ blockquote cite img {
   margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
+input[type='text'],
+input[type='email'],
 select,
 textarea {
   width: 100%;
@@ -575,11 +579,27 @@ textarea {
   height: 6rem;
 }
 
-input[type=checkbox] {
+input[type='checkbox'] {
   margin: 0.5rem 0.25rem 0.5rem 0;
 }
 
+.form-messages {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
 
+.success {
+  background-color: var(--success-color);
+  color: var(--light-text-color);
+}
+
+.error {
+  background-color: var(--error-color);
+  color: var(--light-text-color);
+}
 
 /* ----------------------------------------*/
 /* Footer Section */
@@ -658,8 +678,6 @@ footer p {
   color: var(--primary-text-color-gray);
   font-size: 0.7rem;
 }
-
-
 
 /* ----------------------------------------*/
 /* Animations */
